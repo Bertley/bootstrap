@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+    <title>Navigation</title>
+</head>
+<body>
+
+<div class="container">
+
+    <!--FORM-->
+    <hr><h2>FORM IN BOOTSTRAP</h2><hr>
+    <br><br>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6 float-lg-left">
+            <div class="form-group col-md-6 float-lg-left">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter name" class="form-control form-control-lg">
+            </div>
+            <div class="form-group col-md-6 float-lg-right">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email" class="form-control form-control-lg">
+                <small class="form-text text-muted">Your email will not be shared with anyone</small>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col">
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="Password" readonly class="form-control">
+            </div>
+            <div class="form-group col">
+                <label for="gender">Gender</label>
+                <select id="gender" class="form-control">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="3" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="file">File input</label>
+            <input type="file" id="file" class="form-control">
+            <small id="fileHelp" class="form-text text-muted">Max 3mb size</small>
+        </div>
+
+
+        <!--FORM CHECK-->
+
+        <hr>
+        <h2>FORM CHECK</h2>
+        <hr>
+
+        <fieldset>
+            <legend>What are you using this service for ?</legend>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" value="option1" checked class="form-check-input">
+                    Personal
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" value="option1" checked class="form-check-input">
+                    Commercial Use
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" value="option1" checked class="form-check-input">
+                    Testing
+                </label>
+            </div>
+        </fieldset>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                    Sign up for newsletter
+            </label>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+    <hr>
+    <h2>INLINE FORM</h2>
+    <hr>
+    <br>
+    <br>
+
+    <form class="form-inline">
+        <input type="text" id="username" placeholder="Enter username" class="form-control">
+        <input type="text" id="pasword" placeholder="Password" class="form-control mx-2">
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input mx-3"> Remember me
+            </label>
+        </div>
+
+
+    </form>
+
+    <!--FORM ROW-->
+    <hr><h2>FORM ROW</h2><hr>
+    <br>
+
+    <form>
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Firstname">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Middlename">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Lastname">
+            </div>
+        </div>
+    </form>
+
+    <br><br>
+
+    <!--VALIDATION-->
+    <hr>
+    <h2>Form Validation</h2>
+    <hr>
+    <br>
+    <br>
+
+
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" class="form-control is-invalid">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text" id="password" class="form-control is-invalid">
+        <div class="invalid-feedback">
+            Password not strong enough
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password2">Confirm Password</label>
+        <input type="text" id="password2" class="form-control is-invalid">
+        <div class="invalid-feedback">
+            Password does not match
+        </div>
+    </div>
+
+    <!--INPUT CLASSES-->
+
+    <hr>
+        <h2>INPUT CLASSES</h2>
+    <hr>
+    <div>
+       <div class="input-group">
+           <div class="input-group-prepend">
+               <span class="input-group-text">@</span>
+               <input type="text" class="form-control" placeholder="Username">
+           </div>
+       </div>
+        <br>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Email address">
+            <div class="input-group-prepend">
+                <span class="input-group-text">@something.com</span>
+            </div>
+        </div>
+        <br>
+        <label for="profile-url">Choose profile url</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">https://something.com/member</span>
+            </div>
+            <input type="text" id="profile-url" class="form-control">
+        </div>
+    </div>
+    <br>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">$</span>
+        </div>
+        <input type="text" class="form-control">
+        <div class="input-group-prepend">
+            <span class="input-group-text">.00</span>
+        </div>
+    </div>
+    <br>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username">
+    </div>
+    <br>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">
+                <input type="checkbox">
+            </span>
+        </div>
+        <input type="text" class="form-control">
+    </div>
+
+</div>
+</body>
+</html>
